@@ -7,7 +7,7 @@ def lambda_handler(event, context):
     response = table.put_item(
         Item={
 
-            'id': event['id'],
+            'productId': event['id'],
             'name': event['name']
         }
     )
